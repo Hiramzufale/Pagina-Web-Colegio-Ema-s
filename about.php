@@ -75,18 +75,20 @@
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="index.php" class="nav-item nav-link">Inicio</a>
         <a href="about.php" class="nav-item nav-link active">Nosotros</a>
-        <a href="oferta.html" class="nav-item nav-link">Oferta educativa</a>
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Comunidad</a>
+        <a href="educristiana.php" class="nav-item nav-link">Educación Cristiana</a>
+                <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oferta Educativa</a>
           <div class="dropdown-menu fade-down m-0">
-            <a href="equipo.html" class="dropdown-item">Nuestro equipo</a>
-            <a href="testimonios.html" class="dropdown-item">Testimonios</a>
-            <a href="calendario.html" class="dropdown-item">Calendario</a>
+            <a href="kinder.php" class="dropdown-item">Kinder</a>
+            <a href="primaria.php" class="dropdown-item">Primaria</a>
+            <a href="secundaria.php" class="dropdown-item">Secundaria</a>
+            <a href="preparatoria.php" class="dropdown-item">Preparatoria</a>
+</div>
           </div>
-        </div>
-        <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+       
+        <a href="contacto.php" class="nav-item nav-link">Contacto</a>
       </div>
-      <a href="inscripciones.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscripciones<i class="fa fa-arrow-right ms-3"></i></a>
+      <a href="inscripciones.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscripciones<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
   </nav>
   <!-- Navbar End -->
@@ -129,236 +131,180 @@
     </div>
   </div>
   <!-- About End -->
+<!-- Instalaciones Start -->
+<section id="instalaciones" class="container-xxl py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-start text-primary pe-3">Instalaciones</h6>
+        <h2 class="mb-4">Instalaciones de Colegio Emaús Hermosillo</h2>
+        <p class="mb-3">
+          Nuestras instalaciones están diseñadas para ofrecer un entorno seguro, funcional y acogedor, donde los alumnos puedan desarrollarse plenamente en lo académico, deportivo, espiritual y cultural. Cada espacio está pensado para fomentar el aprendizaje, la creatividad y la convivencia.
+        </p>
+        <p class="mb-4">
+          Además, a lo largo del ciclo escolar se realizan eventos y actividades que fortalecen el sentido de comunidad, creando momentos significativos para compartir en familia y estrechar la relación entre estudiantes, padres y docentes, dentro de un ambiente de fe y alegría.
+        </p>
 
-  <!-- Instalaciones Start -->
-  <section id="instalaciones" class="container-xxl py-5 bg-light">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-start text-primary pe-3">Instalaciones</h6>
-          <h2 class="mb-4">Instalaciones de Colegio Emaús Hermosillo</h2>
-          <p class="mb-3">
-            Nuestras instalaciones están diseñadas para ofrecer un entorno seguro, funcional y acogedor, donde los alumnos puedan desarrollarse plenamente en lo académico, deportivo, espiritual y cultural. Cada espacio está pensado para fomentar el aprendizaje, la creatividad y la convivencia.
-          </p>
-          <p class="mb-4">
-            Además, a lo largo del ciclo escolar se realizan eventos y actividades que fortalecen el sentido de comunidad, creando momentos significativos para compartir en familia y estrechar la relación entre estudiantes, padres y docentes, dentro de un ambiente de fe y alegría.
-          </p>
-
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-heart-pulse fs-3 text-primary me-3"></i>
-                <span>SIAM, servicio médico privado</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-shield-check fs-3 text-primary me-3"></i>
-                <span>Entorno Seguro y Controlado</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-people fs-3 text-primary me-3"></i>
-                <span>Recesos separados por nivel escolar</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-music-note-beamed fs-3 text-primary me-3"></i>
-                <span>Espacios para Actividades Culturales</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-basket2 fs-3 text-primary me-3"></i>
-                <span>Áreas Deportivas Amplias</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                <i class="bi bi-building fs-3 text-primary me-3"></i>
-                <span>Capilla Escolar</span>
-              </div>
+        <!-- Bloques de características -->
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="fas fa-ambulance fs-3 text-primary me-3"></i>
+              <span>SIAM, servicio médico privado</span>
             </div>
           </div>
-        </div>
-
-        <!-- Espacio para imagen (colócala cuando la tengas) -->
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="position-relative" style="min-height:400px;">
-            <!-- Reemplaza por tu imagen real -->
-            <img src="img/instalaciones.jpg" alt="Instalaciones Colegio Emaús" class="img-fluid rounded w-100 h-100" style="object-fit:cover;">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-shield-check fs-3 text-primary me-3"></i>
+              <span>Entorno Seguro y Controlado</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-people fs-3 text-primary me-3"></i>
+              <span>Recesos separados por nivel escolar</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-music-note-beamed fs-3 text-primary me-3"></i>
+              <span>Espacios para Actividades Culturales</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-basket2 fs-3 text-primary me-3"></i>
+              <span>Áreas Deportivas Amplias</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-building fs-3 text-primary me-3"></i>
+              <span>Capilla Escolar</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Video -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="position-relative" style="aspect-ratio:16/9; overflow:hidden; border-radius: 0.5rem;">
+          <video 
+            class="w-100 h-100" 
+            style="object-fit:cover;" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            oncontextmenu="return false;">
+            <source src="img/instalaciones.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- Instalaciones End -->
+<!-- Educación Cristiana Start -->
+<section id="educacion-cristiana" class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height:400px;">
+        <div class="position-relative h-100" style="min-height:400px;">
+  <img class="img-fluid position-absolute w-100 h-100 rounded" 
+       src="img/biblia.jpg" 
+       alt="Educación Cristiana en Colegio Emaús" 
+       style="object-fit:cover;">
+</div>
+
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <h6 class="section-title bg-white text-start text-primary pe-3">Formación en Valores</h6>
+        <h2 class="mb-4">Educación Cristiana</h2>
+        <p class="mb-4">
+          En <strong>Colegio Emaús</strong> creemos que la formación académica debe ir de la mano con la formación espiritual. 
+          Por ello, nuestros estudiantes participan en clases, devocionales y actividades que fortalecen su fe y valores bíblicos.
+        </p>
+        <p class="mb-4">
+          Nuestro propósito es acompañar a cada alumno en su crecimiento integral, promoviendo el amor a Dios, al prójimo y el compromiso con la sociedad.
+        </p>
+        <a href="educristiana.php" class="btn btn-primary py-3 px-4">
+          Conoce más <i class="fa fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Educación Cristiana End -->
+
   <!-- Instalaciones End -->
 
-  <!-- Team Start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-        <h1 class="mb-5">Expert Instructors</h1>
+ 
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Info Colegio -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Colegio Emaús</h4>
+        <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item bg-light">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="img/team-1.jpg" alt="">
-            </div>
-            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-              <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Instructor Name</h5>
-              <small>Designation</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="team-item bg-light">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="img/team-2.jpg" alt="">
-            </div>
-            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-              <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Instructor Name</h5>
-              <small>Designation</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="team-item bg-light">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="img/team-3.jpg" alt="">
-            </div>
-            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-              <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Instructor Name</h5>
-              <small>Designation</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-          <div class="team-item bg-light">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="img/team-4.jpg" alt="">
-            </div>
-            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-              <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Instructor Name</h5>
-              <small>Designation</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Team End -->
 
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-3">Quick Link</h4>
-          <a class="btn btn-link" href="">About Us</a>
-          <a class="btn btn-link" href="">Contact Us</a>
-          <a class="btn btn-link" href="">Privacy Policy</a>
-          <a class="btn btn-link" href="">Terms & Condition</a>
-          <a class="btn btn-link" href="">FAQs & Help</a>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-3">Contact</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-3">Gallery</h4>
-          <div class="row g-2 pt-2">
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-3">Newsletter</h4>
-          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-          <div class="position-relative mx-auto" style="max-width: 400px;">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-          </div>
+      <!-- Contacto -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Contacto</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-            Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <div class="footer-menu">
-              <a href="">Home</a>
-              <a href="">Cookies</a>
-              <a href="">Help</a>
-              <a href="">FQAs</a>
-            </div>
+
+      <!-- Ubicación -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Ubicación</h4>
+        <p><i class="fa fa-map-marker-alt me-2"></i>Colegio Emaús Hermosillo</p>
+        <div class="position-relative rounded overflow-hidden" style="height: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.402103202194!2d-111.03543992448226!3d29.093807975416002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758404744805!5m2!1ses!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div> <!-- cierre row g-5 -->
+  </div> <!-- cierre container py-5 -->
+
+  <!-- Copyright -->
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Ayuda</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Footer End -->
+</div>
+<!-- Footer End -->
+
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -373,5 +319,12 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  <script>
+  // Evita que al cargar la página el navegador haga scroll automático al video
+  window.addEventListener("load", function() {
+    window.scrollTo(0, 0);
+  });
+</script>
+
 </body>
 </html>

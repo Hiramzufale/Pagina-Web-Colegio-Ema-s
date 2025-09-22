@@ -38,6 +38,7 @@
       --emaus-azul-osc:#1c33c7;
       --emaus-blanco:#ffffff;
     }
+    
     /* Ajustes visuales del template */
     .navbar-brand img{height:44px;width:auto}
     .navbar-light .navbar-nav .nav-link.active,
@@ -52,6 +53,7 @@
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
   <!-- Spinner Start -->
   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -75,6 +77,7 @@
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="index.php" class="nav-item nav-link active">Inicio</a>
         <a href="about.php" class="nav-item nav-link">Nosotros</a>
+        <a href="educristiana.php" class="nav-item nav-link">Educación Cristiana</a>
                 <div class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oferta Educativa</a>
           <div class="dropdown-menu fade-down m-0">
@@ -84,14 +87,7 @@
             <a href="preparatoria.php" class="dropdown-item">Preparatoria</a>
 </div>
           </div>
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Comunidad</a>
-          <div class="dropdown-menu fade-down m-0">
-            <a href="equipo.html" class="dropdown-item">Nuestro equipo</a>
-            <a href="testimonios.html" class="dropdown-item">Testimonios</a>
-            <a href="calendario.html" class="dropdown-item">Calendario</a>
-          </div>
-        </div>
+       
         <a href="contacto.php" class="nav-item nav-link">Contacto</a>
       </div>
       <a href="inscripciones.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscripciones<i class="fa fa-arrow-right ms-3"></i></a>
@@ -111,8 +107,8 @@
                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Formación integral</h5>
                 <h1 class="display-4 text-white animated slideInDown">Educación con valores y excelencia académica</h1>
                 <p class="fs-5 text-white mb-4 pb-2">Preescolar, Primaria, Secundaria y Preparatoria en Hermosillo. Acompañamos a cada estudiante en su camino de aprendizaje.</p>
-                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Conócenos</a>
-                <a href="inscripciones.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Inscríbete</a>
+                <a href="about.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Conócenos</a>
+                <a href="inscripciones.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Inscríbete</a>
               </div>
             </div>
           </div>
@@ -127,8 +123,8 @@
                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Ambiente seguro</h5>
                 <h1 class="display-4 text-white animated slideInDown">Inspiramos disciplina, creatividad y liderazgo</h1>
                 <p class="fs-5 text-white mb-4 pb-2">Programas académicos y actividades que desarrollan las habilidades del siglo XXI.</p>
-                <a href="oferta.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Oferta educativa</a>
-                <a href="contacto.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Agendar visita</a>
+                <a href="educristiana.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Educación Cristiana</a>
+                <a href="contacto.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contacto</a>
               </div>
             </div>
           </div>
@@ -151,7 +147,7 @@
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
           <h6 class="section-title bg-white text-start text-primary pe-3">Nosotros</h6>
           <h1 class="mb-4">Bienvenidos a Colegio Emaús</h1>
-          <p class="mb-4">Somos una institución educativa en Hermosillo dedicada a la formación integral de nuestros alumnos, combinando excelencia académica, valores y un ambiente seguro.</p>
+          <p class="mb-4">En Colegio Emaús creemos que la verdadera educación va más allá del aula. Nuestra misión es formar estudiantes con una sólida preparación académica, guiados por valores cristianos que les permitan crecer como personas íntegras, responsables y comprometidas con su entorno.</p>
           <p class="mb-4">Ofrecemos niveles: Preescolar, Primaria, Secundaria y Preparatoria.</p>
           <div class="row gy-2 gx-4 mb-4">
             <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Docentes capacitados</p></div>
@@ -302,53 +298,69 @@
   </div>
   <!-- Testimonios End -->
 
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Colegio Emaús</h4>
-          <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Contacto</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Boletín</h4>
-          <p>Recibe noticias y fechas importantes.</p>
-          <div class="position-relative mx-auto" style="max-width:400px;">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo" />
-            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirme</button>
-          </div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Info Colegio -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Colegio Emaús</h4>
+        <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Contacto</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <div class="footer-menu">
-              <a href="#">Aviso de privacidad</a>
-              <a href="#">Términos</a>
-              <a href="#">Ayuda</a>
-            </div>
+
+      <!-- Ubicación -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Ubicación</h4>
+        <p><i class="fa fa-map-marker-alt me-2"></i>Colegio Emaús Hermosillo</p>
+        <div class="position-relative rounded overflow-hidden" style="height: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.402103202194!2d-111.03543992448226!3d29.093807975416002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758404744805!5m2!1ses!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div> <!-- cierre row g-5 -->
+  </div> <!-- cierre container py-5 -->
+
+  <!-- Copyright -->
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Ayuda</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

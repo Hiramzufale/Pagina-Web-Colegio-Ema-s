@@ -37,38 +37,37 @@
     <div class="spinner-border text-primary" style="width:3rem;height:3rem" role="status"><span class="sr-only">Cargando...</span></div>
   </div>
 
+  <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
     <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <!-- Usa tu archivo del logo en img/logo-emaus.png o .svg -->
       <img src="img/logo-emaus.png.png" alt="Colegio Emaús" class="me-2"/>
       <h5 class="m-0 text-blue">Colegio Emaús</h5>
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="index.php" class="nav-item nav-link">Inicio</a>
         <a href="about.php" class="nav-item nav-link">Nosotros</a>
-        <div class="nav-item dropdown">
+        <a href="educristiana.php" class="nav-item nav-link">Educación Cristiana</a>
+                <div class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Oferta Educativa</a>
           <div class="dropdown-menu fade-down m-0">
-            <a href="kinder.php" class="dropdown-item active">Kinder</a>
+            <a href="kinder.php" class="dropdown-item">Kinder</a>
             <a href="primaria.php" class="dropdown-item">Primaria</a>
             <a href="secundaria.php" class="dropdown-item">Secundaria</a>
             <a href="preparatoria.php" class="dropdown-item">Preparatoria</a>
+</div>
           </div>
-        </div>
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Comunidad</a>
-          <div class="dropdown-menu fade-down m-0">
-            <a href="equipo.html" class="dropdown-item">Nuestro equipo</a>
-            <a href="testimonios.html" class="dropdown-item">Testimonios</a>
-            <a href="calendario.html" class="dropdown-item">Calendario</a>
-          </div>
-        </div>
-        <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+       
+        <a href="contacto.php" class="nav-item nav-link">Contacto</a>
       </div>
       <a href="inscripciones.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscripciones<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
   </nav>
+  <!-- Navbar End -->
 
   <!-- Hero -->
   <div class="container-fluid p-0 mb-5">
@@ -82,7 +81,6 @@
               <h1 class="display-5 text-white">Aprender jugando, crecer con valores</h1>
               <p class="fs-5 text-white mb-4 pb-2">Desarrollo socioemocional, psicomotricidad fina y gruesa, y bases de lectoescritura y lógico-matemático.</p>
               <a href="#requisitos" class="btn btn-primary py-md-3 px-md-5 me-3">Requisitos</a>
-              <a href="inscripciones.php" class="btn btn-light py-md-3 px-md-5">Inscríbete</a>
             </div>
           </div>
         </div>
@@ -432,17 +430,71 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-0">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-6"><h4 class="text-white mb-3">Colegio Emaús</h4><p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p></div>
-        <div class="col-lg-4 col-md-6"><h4 class="text-white mb-3">Contacto</h4><p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p><p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p></div>
-        <div class="col-lg-4 col-md-6"><h4 class="text-white mb-3">Boletín</h4><p>Recibe noticias y fechas importantes.</p><div class="position-relative mx-auto" style="max-width:400px;"><input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo" /><button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirme</button></div></div>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Info Colegio -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Colegio Emaús</h4>
+        <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Contacto</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Ubicación -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Ubicación</h4>
+        <p><i class="fa fa-map-marker-alt me-2"></i>Colegio Emaús Hermosillo</p>
+        <div class="position-relative rounded overflow-hidden" style="height: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.402103202194!2d-111.03543992448226!3d29.093807975416002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758404744805!5m2!1ses!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div> <!-- cierre row g-5 -->
+  </div> <!-- cierre container py-5 -->
+
+  <!-- Copyright -->
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Ayuda</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container"><div class="copyright"><div class="row"><div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.</div><div class="col-md-6 text-center text-md-end"><div class="footer-menu"><a href="#">Aviso de privacidad</a><a href="#">Términos</a><a href="#">Ayuda</a></div></div></div></div></div>
   </div>
+</div>
+<!-- Footer End -->
+
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

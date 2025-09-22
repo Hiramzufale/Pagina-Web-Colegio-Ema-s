@@ -29,6 +29,18 @@
     .table-fees th, .table-fees td {vertical-align: middle;}
   </style>
 </head>
+
+<script>
+  function toggleInfo(id) {
+    const el = document.getElementById(id);
+    if (el.style.display === "none" || el.style.display === "") {
+      el.style.display = "block";
+    } else {
+      el.style.display = "none";
+    }
+  }
+</script>
+<script src="mod_inscripciones/peticion.js"></script>
 <body>
   <!-- Spinner Start -->
   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -70,38 +82,17 @@
             <a href="#formPreinscripcion" class="link-primary">Ir al formulario</a>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="p-4 border rounded-3 shadow-soft h-100">
             <span class="step-badge bg-primary text-white mb-3">2</span>
-            <h5>Cita y visita</h5>
-            <p>Agenda visita guiada y entrevista con coordinación académica.</p>
-            <a href="#visita" class="link-primary">Agendar visita</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-4 border rounded-3 shadow-soft h-100">
-            <span class="step-badge bg-primary text-white mb-3">3</span>
-            <h5>Evaluación diagnóstica</h5>
-            <p>Aplicación acorde al nivel para conocer el perfil del alumno.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-4 border rounded-3 shadow-soft h-100">
-            <span class="step-badge bg-primary text-white mb-3">4</span>
-            <h5>Resultados</h5>
-            <p>Recibe respuesta y recomendaciones personalizadas.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-4 border rounded-3 shadow-soft h-100">
-            <span class="step-badge bg-primary text-white mb-3">5</span>
             <h5>Entrega de documentación</h5>
             <p>Entrega completa en control escolar para formalizar el ingreso.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="p-4 border rounded-3 shadow-soft h-100">
-            <span class="step-badge bg-primary text-white mb-3">6</span>
+            <span class="step-badge bg-primary text-white mb-3">3</span>
             <h5>Pago y asignación</h5>
             <p>Realiza el pago de inscripción y recibe grupo/turno.</p>
           </div>
@@ -233,7 +224,6 @@
                 </tbody>
               </table>
             </div>
-            <small class="text-muted">*Actualiza los montos en el panel o base de datos. Se aplican políticas de becas y descuentos institucionales.</small>
           </div>
         </div>
       </div>
@@ -270,111 +260,124 @@
       </div>
     </div>
   </div>
-
-  <!-- Preinscripción en línea -->
-  <div id="formPreinscripcion" class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="section-title bg-white text-center text-primary px-3">Formulario</h6>
-        <h1 class="mb-4">Preinscripción en línea</h1>
-        <p class="text-muted">Completa la información. Nos pondremos en contacto para agendar entrevista y evaluación.</p>
+<!-- Preinscripción en línea -->
+<div id="formPreinscripcion" class="container-xxl py-5">
+  <div class="container">
+    <?php include "config.php"; ?>
+    <div class="text-center mb-5">
+      <h6 class="section-title bg-white text-center text-primary px-3">Formulario</h6>
+      <h1 class="mb-4">Preinscripción en línea</h1>
+      <p class="text-muted">Completa la información.</p>
+    </div>
+<form id="preForm" method="post" action="javascript:void(0)">
+    <!-- Datos del alumno -->
+      <div class="col-12">
+        <div class="card shadow-soft">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Datos del alumno</h5>
+            <div class="row g-3">
+              <div class="col-sm-12 col-md-12">
+                <div class="mb-3">
+                  <label for="nombre" class="control-label col-form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="mb-3">
+                  <label for="apaterno" class="control-label col-form-label">Apellido Paterno</label>
+                  <input type="text" class="form-control" id="apaterno" name="apaterno" required>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="mb-3">
+                  <label for="amaterno" class="control-label col-form-label">Apellido Materno</label>
+                  <input type="text" class="form-control" id="amaterno" name="amaterno">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="curp" class="control-label col-form-label">
+                  CURP
+                  <span onclick="toggleInfo('info-curp')" style="cursor:pointer; vertical-align: middle;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 24 24" fill="#2563eb">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+                               10-4.48 10-10S17.52 2 12 2zm0 17
+                               c-.55 0-1-.45-1-1v-6c0-.55.45-1
+                               1-1s1 .45 1 1v6c0 .55-.45 1-1 1zm0-10
+                               c-.55 0-1-.45-1-1s.45-1 1-1
+                               1 .45 1 1-.45 1-1 1z"/>
+                    </svg>
+                  </span>
+                </label>
+                <input type="text" class="form-control" id="curp" name="curp" 
+                       required maxlength="18" pattern="^[A-Z]{4}\d{6}[HM][A-Z]{5}[A-Z\d]\d$"
+                       title="Debe ser una CURP válida de 18 caracteres en mayúsculas.">
+                <div id="info-curp" style="display:none; font-size:13px; color:#555; margin-top:5px;">
+                  La CURP (Clave Única de Registro de Población) es un identificador nacional asignado a cada ciudadano mexicano.
+                  <a href="https://www.gob.mx/curp/" target="_blank">Consultar tu CURP en gob.mx</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label required">Nivel</label>
+                <select class="form-select" name="nivel" required>
+                  <option value="" selected disabled>Selecciona</option>
+                  <option>Preescolar</option>
+                  <option>Primaria</option>
+                  <option>Secundaria</option>
+                  <option>Preparatoria</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label required">Grado/semestre</label>
+                <input type="text" class="form-control" name="grado" placeholder="Ej. 2° o 3er semestre" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Escuela de procedencia</label>
+                <input type="text" class="form-control" name="procedencia">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Promedio actual</label>
+                <input type="number" step="0.01" min="0" max="10" class="form-control" name="promedio">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label required">Turno</label>
+                <select class="form-select" name="turno" required>
+                  <option value="" selected disabled>Selecciona</option>
+                  <option>Matutino</option>
+                  <option>Vespertino</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <form class="row g-4 needs-validation" novalidate id="preForm" action="javascript:void(0)">
-        <!-- Datos del alumno -->
-        <div class="col-12">
-          <div class="card shadow-soft">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Datos del alumno</h5>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label required">Nombre(s)</label>
-                  <input type="text" class="form-control" name="alumnoNombre" required>
-                  <div class="invalid-feedback">Ingresa el nombre.</div>
-                </div>
-                <div class="col-md-3">
-                  <label class="form-label required">Apellido paterno</label>
-                  <input type="text" class="form-control" name="alumnoApP" required>
-                  <div class="invalid-feedback">Ingresa el apellido paterno.</div>
-                </div>
-                <div class="col-md-3">
-                  <label class="form-label required">Apellido materno</label>
-                  <input type="text" class="form-control" name="alumnoApM" required>
-                  <div class="invalid-feedback">Ingresa el apellido materno.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label required">CURP</label>
-                  <input type="text" class="form-control text-uppercase" name="alumnoCURP" pattern="[A-Z0-9]{18}" maxlength="18" required>
-                  <div class="form-text">18 caracteres (A–Z, 0–9)</div>
-                  <div class="invalid-feedback">CURP inválida.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label required">Nivel</label>
-                  <select class="form-select" name="nivel" required>
-                    <option value="" selected disabled>Selecciona</option>
-                    <option>Preescolar</option>
-                    <option>Primaria</option>
-                    <option>Secundaria</option>
-                    <option>Preparatoria</option>
-                  </select>
-                  <div class="invalid-feedback">Selecciona un nivel.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label required">Grado/semestre</label>
-                  <input type="text" class="form-control" name="grado" placeholder="Ej. 2° o 3er semestre" required>
-                  <div class="invalid-feedback">Ingresa el grado.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Escuela de procedencia</label>
-                  <input type="text" class="form-control" name="procedencia">
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Promedio actual</label>
-                  <input type="number" step="0.01" min="0" max="10" class="form-control" name="promedio">
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label required">Turno</label>
-                  <select class="form-select" name="turno" required>
-                    <option value="" selected disabled>Selecciona</option>
-                    <option>Matutino</option>
-                    <option>Vespertino</option>
-                  </select>
-                  <div class="invalid-feedback">Selecciona un turno.</div>
-                </div>
+      <!-- Tutor -->
+      <div class="col-12">
+        <div class="card shadow-soft">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Madre/Padre o Tutor</h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label required">Nombre completo</label>
+                <input type="text" class="form-control" name="tutorNombre" required>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label required">Teléfono</label>
+                <input type="tel" class="form-control" name="tutorTel" pattern="[0-9\s\-\+]{8,}" required>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label required">Correo</label>
+                <input type="email" class="form-control" name="tutorEmail" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Comentarios</label>
+                <textarea class="form-control" name="comentarios" rows="2" placeholder="Información relevante (salud, apoyos, etc.)"></textarea>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Tutor -->
-        <div class="col-12">
-          <div class="card shadow-soft">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Madre/Padre o Tutor</h5>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label required">Nombre completo</label>
-                  <input type="text" class="form-control" name="tutorNombre" required>
-                  <div class="invalid-feedback">Ingresa el nombre del tutor.</div>
-                </div>
-                <div class="col-md-3">
-                  <label class="form-label required">Teléfono</label>
-                  <input type="tel" class="form-control" name="tutorTel" pattern="[0-9\s\-\+]{8,}" required>
-                  <div class="invalid-feedback">Ingresa un teléfono válido.</div>
-                </div>
-                <div class="col-md-3">
-                  <label class="form-label required">Correo</label>
-                  <input type="email" class="form-control" name="tutorEmail" required>
-                  <div class="invalid-feedback">Ingresa un correo válido.</div>
-                </div>
-                <div class="col-12">
-                  <label class="form-label">Comentarios</label>
-                  <textarea class="form-control" name="comentarios" rows="2" placeholder="Información relevante (salud, apoyos, etc.)"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Documentación -->
         <div class="col-12">
@@ -405,18 +408,27 @@
         </div>
 
         <!-- Privacidad y envío -->
-        <div class="col-12">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" value="1" id="acepto" required>
-            <label class="form-check-label required" for="acepto">Acepto el <a href="docs/aviso-privacidad.pdf" target="_blank">Aviso de Privacidad</a></label>
-            <div class="invalid-feedback">Debes aceptar el Aviso de Privacidad.</div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-send me-1"></i>Enviar preinscripción</button>
-          <span class="ms-3 text-success d-none" id="okMsg"><i class="bi bi-check2-circle me-1"></i>Solicitud recibida</span>
-        </div>
-      </form>
-    </div>
+      <!-- Aviso de privacidad y envío -->
+<div class="col-12">
+  <div class="form-check mb-2">
+    <input class="form-check-input" type="checkbox" value="1" id="acepto" name="acepto" required>
+    <label class="form-check-label required" for="acepto">
+      Acepto el <a href="docs/aviso-privacidad.pdf" target="_blank">Aviso de Privacidad</a>
+    </label>
+    <div class="invalid-feedback">Debes aceptar el Aviso de Privacidad.</div>
   </div>
+
+  <button type="submit" class="btn btn-primary btn-lg">
+    <i class="bi bi-send me-1"></i>Enviar preinscripción
+  </button>
+
+  <span class="ms-3 text-success d-none" id="okMsg">
+    <i class="bi bi-check2-circle me-1"></i>Solicitud recibida
+  </span>
+</div>
+</form>
+
+
 
   <!-- Agendar visita -->
   <div id="visita" class="container-xxl py-5 bg-light">
@@ -632,5 +644,11 @@
       // fetch('/api/cupos').then(r=>r.json()).then(({pre,pri,sec,prepa}) => { ... });
     })();
   </script>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="mod_inscripciones/peticion.js"></script>
+
+
 </body>
 </html>

@@ -286,53 +286,70 @@
   </div>
   <!-- Testimonial End -->
 
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Colegio Emaús</h4>
-          <p>Formación integral con excelencia académica y valores.</p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Contacto</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Boletín</h4>
-          <p>Recibe noticias y fechas importantes.</p>
-          <div class="position-relative mx-auto" style="max-width:400px;">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo" />
-            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirme</button>
-          </div>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Info Colegio -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Colegio Emaús</h4>
+        <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Contacto</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <div class="footer-menu">
-              <a href="#">Aviso de privacidad</a>
-              <a href="#">Términos</a>
-              <a href="#">Ayuda</a>
-            </div>
+
+      <!-- Ubicación -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Ubicación</h4>
+        <p><i class="fa fa-map-marker-alt me-2"></i>Colegio Emaús Hermosillo</p>
+        <div class="position-relative rounded overflow-hidden" style="height: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.402103202194!2d-111.03543992448226!3d29.093807975416002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758404744805!5m2!1ses!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div> <!-- cierre row g-5 -->
+  </div> <!-- cierre container py-5 -->
+
+  <!-- Copyright -->
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Ayuda</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

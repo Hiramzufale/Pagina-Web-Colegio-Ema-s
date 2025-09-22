@@ -127,7 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="utf-8" />
   <title>Contacto | Colegio Emaús Hermosillo</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Contáctanos para informes, admisiones y visitas guiadas." name="description" />
+  <meta content="Contáctanos para informes, inscripciones y visitas guiadas." name="description" />
 
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon" />
@@ -173,39 +173,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="spinner-border text-primary" style="width:3rem;height:3rem" role="status"><span class="sr-only">Cargando...</span></div>
   </div>
 
-  <!-- Navbar (igual que el sitio) -->
+  <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-      <img src="img/logo-emaus.png" alt="Colegio Emaús" style="height:44px;width:auto" class="me-2"/>
-      <h5 class="m-0 text-blue">Colegio Emaús</h5>
-    </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+ <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+  <img src="img/logo-emaus.png" alt="" style="height:44px; width:auto;" class="me-2"/>
+  <span class="h5 m-0 text-secundary">Colegio Emaús</span>
+</a>
+
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="index.php" class="nav-item nav-link">Inicio</a>
         <a href="about.php" class="nav-item nav-link">Nosotros</a>
-        <div class="nav-item dropdown">
+        <a href="educristiana.php" class="nav-item nav-link">Educación Cristiana</a>
+                <div class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oferta Educativa</a>
           <div class="dropdown-menu fade-down m-0">
             <a href="kinder.php" class="dropdown-item">Kinder</a>
             <a href="primaria.php" class="dropdown-item">Primaria</a>
             <a href="secundaria.php" class="dropdown-item">Secundaria</a>
             <a href="preparatoria.php" class="dropdown-item">Preparatoria</a>
+</div>
           </div>
-        </div>
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Comunidad</a>
-          <div class="dropdown-menu fade-down m-0">
-            <a href="equipo.html" class="dropdown-item">Nuestro equipo</a>
-            <a href="testimonios.html" class="dropdown-item">Testimonios</a>
-            <a href="calendario.html" class="dropdown-item">Calendario</a>
-          </div>
-        </div>
+       
         <a href="contacto.php" class="nav-item nav-link active">Contacto</a>
       </div>
       <a href="inscripciones.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscripciones<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
   </nav>
+  <!-- Navbar End -->
 
   <!-- Header -->
   <div class="container-fluid bg-dark py-5 mb-5">
@@ -213,13 +211,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="row g-4 align-items-center">
         <div class="col-lg-8">
           <h1 class="text-white mb-2">Contáctanos</h1>
-          <p class="text-white-50 mb-0">Informes, admisiones y visitas guiadas. ¡Estamos para ayudarte!</p>
+          <p class="text-white-50 mb-0">Informes, Inscripciones y dudas. ¡Estamos para ayudarte!</p>
         </div>
         <div class="col-lg-4 text-lg-end">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-lg-end mb-0">
-              <li class="breadcrumb-item"><a class="text-white-50" href="index.php">Inicio</a></li>
-              <li class="breadcrumb-item text-white active" aria-current="page">Contacto</li>
+           
             </ol>
           </nav>
         </div>
@@ -241,14 +238,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="col-md-4">
           <div class="p-4 bg-light rounded contact-card h-100">
             <div class="d-flex align-items-center mb-3"><i class="bi bi-geo-alt fs-3 text-primary me-2"></i><h5 class="mb-0">Ubicación</h5></div>
-            <p class="mb-0">Hermosillo, Sonora, México<br/>C.P. 00000</p>
+            <p class="mb-0">Blvd. Jesús García Morales 573, La Manga, Hermosillo, Son.<br/>C.P. 83176</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="p-4 bg-light rounded contact-card h-100">
             <div class="d-flex align-items-center mb-3"><i class="bi bi-telephone fs-3 text-primary me-2"></i><h5 class="mb-0">Teléfono</h5></div>
-            <p class="mb-2 mb-md-3"><a href="tel:+526620000000" class="link-dark text-decoration-none">(662) 000 0000</a></p>
-            <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://wa.me/526620000000?text=Hola%20me%20gustar%C3%ADa%20recibir%20informes%20sobre%20admisiones">WhatsApp</a>
+            <p class="mb-2 mb-md-3"><a href="tel:+526620000000" class="link-dark text-decoration-none">(662) 242 8028</a></p>
+            <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://wa.me/526624208028?text=Hola%20me%20gustar%C3%ADa%20recibir%20informes%20sobre%20admisiones">WhatsApp</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -260,10 +257,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
       </div>
 
-      <div class="row g-5 align-items-stretch">
-        <!-- Formulario -->
-        <div class="col-lg-7">
-          <div class="p-4 p-md-5 bg-white border rounded-3 shadow-sm h-100">
+    <div class="row g-5 justify-content-center">
+  <div class="col-lg-7">
+    <div class="p-4 p-md-5 bg-white border rounded-3 shadow-sm h-100">
             <h4 class="mb-3 section-title">Escríbenos</h4>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" novalidate id="contactForm">
               <input type="hidden" name="csrf" value="<?php echo htmlspecialchars($csrf); ?>" />
@@ -313,9 +309,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   <div class="form-floating">
                     <select class="form-select" id="horario" name="horario">
                       <?php
-                        $horarios = ['Mañana','Mediodía','Tarde'];
                         $selh = $_POST['horario'] ?? '';
-                        echo '<option value="">Sin preferencia</option>';
+                        echo '<option value="">Mañana</option>';
                         foreach ($horarios as $h) {
                           $s = ($selh === $h) ? 'selected' : '';
                           echo '<option '.$s.' value="'.htmlspecialchars($h).'">'.htmlspecialchars($h)."</option>";
@@ -346,7 +341,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   </div>
                 </div>
                 <div class="col-12 d-flex gap-2">
-                  <button class="btn btn-primary px-4" type="submit" <?php echo !$allow_submit ? 'disabled' : ''; ?>>Enviar</button>
                   <a class="btn btn-outline-primary" id="btnWhatsapp" target="_blank" href="#">Enviar por WhatsApp</a>
                 </div>
                 <?php if (!$allow_submit): ?>
@@ -357,84 +351,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
         </div>
 
-        <!-- Mapa / Info adicional -->
-        <div class="col-lg-5">
-          <div class="h-100 border rounded-3 overflow-hidden shadow-sm">
-            <iframe title="Mapa Colegio Emaús" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d-111.0!3d29.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1680000000000" width="100%" height="100%" style="min-height:520px;border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="bg-light p-3 mt-3 rounded-3">
-            <h6 class="mb-1">Horarios de atención</h6>
-            <p class="mb-0 small">Lunes a Viernes: 8:00 – 15:00 h</p>
-          </div>
-        </div>
-      </div>
+   <!-- Mapa / Info adicional -->
+<div class="mt-3 rounded-3 overflow-hidden shadow" style="height: 300px;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.401944486382!2d-111.0354452892479!3d29.093812662882158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758349654978!5m2!1ses!2smx"
+    width="100%" height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+  </div>
+</div>
 
       <!-- FAQ corto -->
-      <div class="row mt-5">
-        <div class="col-lg-10">
-          <h5 class="section-title">Preguntas frecuentes</h5>
-          <div class="accordion" id="faqContact">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="q1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1">¿Qué documentos necesito para inscribir?</button></h2>
-              <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqContact"><div class="accordion-body">Acta de nacimiento, CURP, boleta del grado anterior, identificación del tutor y comprobante de domicilio. Para detalles, visita <a href="inscripciones.php">Inscripciones</a>.</div></div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="q2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">¿Puedo agendar una visita guiada?</button></h2>
-              <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqContact"><div class="accordion-body">Sí, selecciona la <em>Fecha deseada de visita</em> en el formulario y nos coordinamos contigo.</div></div>
-            </div>
-          </div>
-        </div>
+ 
       </div>
 
     </div>
   </div>
 
-  <!-- Footer (igual que el sitio) -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3"><?php echo htmlspecialchars($SITE_NAME); ?></h4>
-          <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Contacto</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i><?php echo htmlspecialchars($TO_EMAIL_PRIMARY); ?></p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h4 class="text-white mb-3">Boletín</h4>
-          <p>Recibe noticias y fechas importantes.</p>
-          <div class="position-relative mx-auto" style="max-width:400px;">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo" />
-            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirme</button>
-          </div>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Info Colegio -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Colegio Emaús</h4>
+        <p>Formamos estudiantes íntegros y competentes con una propuesta educativa centrada en valores.</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Contacto</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hermosillo, Sonora</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(662) 000 0000</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@colegioemaus.mx</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <span class="border-bottom"><?php echo htmlspecialchars($SITE_NAME); ?></span>, Todos los derechos reservados.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <div class="footer-menu">
-              <a href="#">Aviso de privacidad</a>
-              <a href="#">Términos</a>
-              <a href="#">Ayuda</a>
-            </div>
+
+      <!-- Ubicación -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="text-white mb-3">Ubicación</h4>
+        <p><i class="fa fa-map-marker-alt me-2"></i>Colegio Emaús Hermosillo</p>
+        <div class="position-relative rounded overflow-hidden" style="height: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.402103202194!2d-111.03543992448226!3d29.093807975416002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83d4538e0c7b%3A0x87130b4b568b1cb7!2sColegio%20Ema%C3%BAs!5e0!3m2!1ses!2smx!4v1758404744805!5m2!1ses!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div> <!-- cierre row g-5 -->
+  </div> <!-- cierre container py-5 -->
+
+  <!-- Copyright -->
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <span class="border-bottom">Colegio Emaús Hermosillo</span>, Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Ayuda</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<!-- Footer End -->
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -453,35 +458,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     })();
 
     // Construir mensaje de WhatsApp desde el formulario
-    const btnWa = document.getElementById('btnWhatsapp');
-    const form  = document.getElementById('contactForm');
-    const waPhone = '526620000000'; // Número en formato internacional sin +
-    function buildWa(){
-      const nombre  = document.getElementById('nombre').value.trim();
-      const email   = document.getElementById('email').value.trim();
-      const tel     = document.getElementById('telefono').value.trim();
-      const nivel   = document.getElementById('nivel').value;
-      const asunto  = document.getElementById('asunto').value.trim();
-      const visita  = document.getElementById('visita').value;
-      const horario = document.getElementById('horario').value;
-      const msg     = document.getElementById('mensaje').value.trim();
+const btnWa = document.getElementById('btnWhatsapp');
+const form  = document.getElementById('contactForm');
+const waPhone = '526624208028'; // Número en formato internacional sin +
 
-      let text = `Hola, me gustaría recibir informes.\n`+
-                 `Nombre: ${nombre}\n`+
-                 `Correo: ${email}\n`+
-                 `Teléfono: ${tel}\n`+
-                 `Nivel: ${nivel}\n`+
-                 `Asunto: ${asunto}\n`+
-                 `Visita: ${visita||'N/A'} (${horario||'Sin preferencia'})\n`+
-                 `Mensaje: ${msg}`;
-      const url = `https://wa.me/${waPhone}?text=${encodeURIComponent(text)}`;
-      btnWa.href = url;
-    }
-    if (btnWa) {
-      btnWa.addEventListener('click', buildWa);
-      form && form.addEventListener('input', buildWa);
-      buildWa();
-    }
+function buildWa(){
+  const nombre  = document.getElementById('nombre').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const tel     = document.getElementById('telefono').value.trim();
+  const nivel   = document.getElementById('nivel').value;
+  const asunto  = document.getElementById('asunto').value.trim();
+  const visita  = document.getElementById('visita').value;
+  const horario = document.getElementById('horario').value;
+  const msg     = document.getElementById('mensaje').value.trim();
+
+  let text = 
+`📩 *Solicitud de Información — Colegio Emaús* 📩
+
+────────────
+👤 *Nombre:* ${nombre}
+✉️ *Correo:* ${email}
+📞 *Teléfono:* ${tel||'N/A'}
+🎓 *Nivel de interés:* ${nivel}
+📌 *Asunto:* ${asunto}
+📅 *Visita:* ${visita||'No especificada'}
+🕒 *Horario preferido:* ${horario||'Sin preferencia'}
+────────────
+
+📝 *Mensaje:*
+${msg||'(Sin comentarios adicionales)'}
+────────────
+
+Muchas gracias por su atención. 🙏`;
+
+  const url = `https://wa.me/${waPhone}?text=${encodeURIComponent(text)}`;
+  btnWa.href = url;
+}
+
+if (btnWa) {
+  btnWa.addEventListener('click', buildWa);
+  form && form.addEventListener('input', buildWa);
+  buildWa();
+}
 
     // Validación front (Bootstrap)
     (function(){
